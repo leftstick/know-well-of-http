@@ -67,10 +67,10 @@
 					<section>
 						<h2>http is limited</h2>
 						<p>
-							Websites nowadays include many different components besides your standard HTML, such as <code>CSS</code>, <code>JavaScript</code>, images, video and Flash animations...
+							Websites nowadays include many different components, such as <code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, images, video and Flash animations...
 						</p>
 						<small>
-							But HTTP practically only allows one outstanding request per TCP connection.
+							But HTTP practically only allows one request per TCP connection.
 						</small>
 						<small>
 							It's still limited even modern browsers have used multiple TCP connections to issue parallel requests.
@@ -78,7 +78,20 @@
 					</section>
 				</section>
 
-				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>what we have now?</h2>
+						<ul>
+							<li>in-lining</li>
+							<li>spriting</li>
+							<li>concatenation</li>
+							<li>eager loading</li>
+							<li>GraphQL</li>
+						</ul>
+						<p>All above solutions are for reducing request</p>
+					</section>
+				</section>
+
 				<section>
 					<section>
 						<h2>Why http2</h2>
@@ -89,18 +102,6 @@
 							<li>http2 uses header compression to reduce overhead</li>
 							<li>allows servers to “push” responses proactively into client caches</li>
 						</ul>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="img/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
 					</section>
 				</section>
 
