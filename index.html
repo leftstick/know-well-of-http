@@ -43,40 +43,52 @@
 
 				<section>
 					<section>
-						<h2>http</h2>
+						<h2>http is old</h2>
 						<p>
 							<code>HTTP/1.1</code> has served the Web well for more than fifteen years, But it's not meant to be a perfect solution, its age is starting to show.
 						</p>
-					</section>
-					<section>
-						<h2>http is stateless</h2>
-						<img src="img/http-s.svg" alt="http-s" style="background-color: #fff;">
-					</section>
-					<section>
-						<h2>why update http</h2>
-						<blockquote>
-							Websites nowadays include many different components besides your standard HTML, such as <code>CSS</code>, <code>JavaScript</code>, images, video and Flash animations...
-						</blockquote>
-						<blockquote>
-							To transfer those informations, the browser has to connection for every request, and each one contains the details about the source, destination and contents of this communication. That puts a huge load on both the server  and client
-						</blockquote>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="img/arrow.png" alt="Down arrow">
+						</a>
 					</section>
 					<section>
 						<h2>diagram of http lifecycle</h2>
 						<img src="img/http.svg" alt="http" style="background-color: #fff;">
+					</section>
+					<section>
+						<h2>http is stateless</h2>
+						<p>
+							It means each request must contain enough information on their own to fulfill the request. Even the information is shared during lifecycle.
+						</p>
+						<small>
+							For example: sessionID is always in the header for each request.
+						</small>
+					</section>
+					<section>
+						<h2>http is limited</h2>
+						<p>
+							Websites nowadays include many different components besides your standard HTML, such as <code>CSS</code>, <code>JavaScript</code>, images, video and Flash animations...
+						</p>
+						<small>
+							But HTTP practically only allows one outstanding request per TCP connection.
+						</small>
+						<small>
+							It's still limited even modern browsers have used multiple TCP connections to issue parallel requests.
+						</small>
 					</section>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="img/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Why http2</h2>
+						<ul>
+							<li>http2 is binary, instead of textual</li>
+							<li>http2 is fully multiplexed, instead of ordered and blocking</li>
+							<li>http2 can therefore use one connection for parallelism</li>
+							<li>http2 uses header compression to reduce overhead</li>
+							<li>allows servers to “push” responses proactively into client caches</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Basement Level 1</h2>
